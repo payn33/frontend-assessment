@@ -329,13 +329,13 @@ const doughnutChartData = [
     label: "Calories Burned",
     value: 220,
     color: ["#00C7F2", "#f7f8f9"],
-    cutout: "40%",
+    cutout: "39%",
   },
   {
     label: "Exercise",
     value: 120,
     color: ["#F75D5F", "#f7f8f9"],
-    cutout: "20%",
+    cutout: "28%",
   },
 ];
 

@@ -47,6 +47,11 @@ export default function LineChart({ data }: Props) {
         align: "start",
       },
     },
+    elements: {
+      point: {
+        radius: 0,
+      },
+    },
     scales: {
       y: {
         min: 1,
