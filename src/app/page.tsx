@@ -323,19 +323,19 @@ const doughnutChartData = [
     label: "Miles",
     value: 300,
     color: ["#FBC62F", "#f7f8f9"],
-    cutout: "65%",
+    cutout: "60%%",
   },
   {
     label: "Calories Burned",
     value: 220,
     color: ["#00C7F2", "#f7f8f9"],
-    cutout: "55%",
+    cutout: "40%",
   },
   {
     label: "Exercise",
     value: 120,
     color: ["#F75D5F", "#f7f8f9"],
-    cutout: "45%",
+    cutout: "20%",
   },
 ];
 
@@ -541,7 +541,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="flex max-w-[300px] max-h-[300px]">
+              <div className="flex ">
                 <DoughnutChart data={doughnutChartData} />
               </div>
             </div>
