@@ -385,7 +385,7 @@ export default function Home() {
               <DashboardCard
                 key={idx}
                 idx={idx}
-                className="flex-grow w-full sm:w-full md:w-full lg:w-1/4  mr-2 mb-2 min-w-[250px] min-h-[170px]"
+                className="flex-grow w-full sm:w-full md:w-full lg:w-1/4  mr-2 mb-2 min-w-[250px] min-h-[160px]"
                 cardData={ctx}
               />
             ))}

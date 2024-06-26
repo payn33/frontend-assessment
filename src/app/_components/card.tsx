@@ -37,8 +37,8 @@ export default function DashboardCard({
           <Image
             src={icon}
             alt="dashboard card lightening icon"
-            width={20}
-            height={20}
+            width={11}
+            height={11}
           />
         </div>
       )}
@@ -55,25 +55,14 @@ export default function DashboardCard({
             idx && idx > 2 && "w-[30px] h-[30px]"
           } translate-y-[7px] cursor-pointer`}
         >
-          {idx && idx < 2 ? (
-            <span className="flex">
-              <Image
-                src={headerIcon}
-                alt="dashboard card bar chart icon"
-                width={18}
-                height={18}
-              />
-            </span>
-          ) : (
-            <span>
-              <Image
-                src={headerIcon}
-                alt="dashboard card bar chart icon"
-                width={18}
-                height={18}
-              />
-            </span>
-          )}
+          <span className="flex">
+            <Image
+              src={headerIcon}
+              alt="dashboard card bar chart icon"
+              width={15}
+              height={15}
+            />
+          </span>
         </div>
       </div>
 
@@ -108,15 +97,15 @@ export default function DashboardCard({
         </div>
 
         {cards && (
-          <div className="min-h-[410px]">
+          <div className="">
             <div className="flex flex-col w-full pt-2.5 pb-4">
               {cards.map((ctx, idx) => (
                 <div
                   key={idx}
-                  className="flex rounded-md bg-[#F8F7FF] p-2 mb-2 min-h-[60px]"
+                  className="flex rounded-md bg-[#F8F7FF] p-2 mb-2 h-[60px]"
                 >
                   {ctx.profileImg.length ? (
-                    <span className="mr-3 min-w-[55px] flex justify-center items-center">
+                    <span className="mr-3 min-w-[55px] max-h-[45px] flex justify-center items-center">
                       <Image
                         src={ctx.profileImg[0]}
                         alt="dashboard card profile image"
@@ -134,7 +123,7 @@ export default function DashboardCard({
                       />
                     </span>
                   ) : (
-                    <span className="mr-3 min-w-[55px]">
+                    <span className="mr-3 min-w-[55px] max-h-[44px]">
                       <Image
                         src={ctx.profileImg}
                         alt="dashboard card profile image"
@@ -144,9 +133,9 @@ export default function DashboardCard({
                     </span>
                   )}
                   <div className="flex items-center justify-between w-full">
-                    <span className="flex flex-col">
-                      <p>{ctx.name}</p>
-                      <p className="text-[#757575] text-xs">{ctx.time}</p>
+                    <span className="flex flex-col max-w-[75px]">
+                      <p className="truncate">{ctx.name}</p>
+                      <p className="text-[#757575] truncate text-xs">{ctx.time}</p>
                     </span>
 
                     {ctx.type === "icon" && (
@@ -172,7 +161,7 @@ export default function DashboardCard({
                         <input
                           type="checkbox"
                           name="check"
-                          className="peer appearance-none rounded-lg checked:bg-[#4AD79B] w-[25px] h-[25px] border-black-200 border-[2px]"
+                          className="peer appearance-none rounded-[11px] checked:bg-[#4AD79B] w-[25px] h-[25px] border-black-200 border-[2px]"
                           defaultChecked={idx === 0 || (idx === 2 && true)}
                         />
 
