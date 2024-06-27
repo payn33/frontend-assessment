@@ -74,7 +74,7 @@ export default function Sidebar({ close, handleClose }: Props) {
         />
       </div>
 
-      <div className={`flex flex-col mt-[130px] min-w-[50px]`}>
+      <div className={`flex flex-col mt-[80px] min-w-[50px]`}>
         {texts.nav.map((ctx, idx) => (
           <div
             key={idx}
