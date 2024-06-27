@@ -70,5 +70,5 @@ export default function DoughnutChart({ data }: Props) {
     ],
   };
 
-  return <Doughnut data={finalData} options={options} updateMode="resize" />;
+  return <Doughnut data={finalData} options={options} updateMode="resize"  />;
 }

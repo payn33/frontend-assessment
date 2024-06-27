@@ -105,7 +105,7 @@ export default function DashboardCard({
                   className="flex rounded-md bg-[#F8F7FF] p-2 mb-2 h-[60px]"
                 >
                   {ctx.profileImg.length ? (
-                    <span className="mr-3 min-w-[55px] max-h-[45px] flex justify-center items-center">
+                    <span className="mr-1 md:mr-3 min-w-[45px] max-h-[45px] flex justify-center items-center">
                       <Image
                         src={ctx.profileImg[0]}
                         alt="dashboard card profile image"
@@ -123,7 +123,7 @@ export default function DashboardCard({
                       />
                     </span>
                   ) : (
-                    <span className="mr-3 min-w-[55px] max-h-[44px]">
+                    <span className="mr-1 md:mr-3 min-w-[55px] max-h-[44px]">
                       <Image
                         src={ctx.profileImg}
                         alt="dashboard card profile image"
@@ -133,9 +133,11 @@ export default function DashboardCard({
                     </span>
                   )}
                   <div className="flex items-center justify-between w-full">
-                    <span className="flex flex-col max-w-[75px]">
+                    <span className="flex flex-col max-w-[74px]">
                       <p className="truncate">{ctx.name}</p>
-                      <p className="text-[#757575] truncate text-xs">{ctx.time}</p>
+                      <p className="text-[#757575] truncate text-xs">
+                        {ctx.time}
+                      </p>
                     </span>
 
                     {ctx.type === "icon" && (
@@ -148,9 +150,11 @@ export default function DashboardCard({
                     )}
 
                     {ctx.type === "string" && (
-                      <button className="text-[#005E36] text-sm p-1 rounded-md bg-[#D2FFE6]">
-                        view class
-                      </button>
+                      <span className="max-w-[74px] flex">
+                        <button className="text-[#005E36] truncate text-sm p-1 rounded-md bg-[#D2FFE6]">
+                          view class
+                        </button>
+                      </span>
                     )}
 
                     {ctx.type === "check" && (

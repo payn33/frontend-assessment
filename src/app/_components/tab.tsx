@@ -323,7 +323,7 @@ export default function Tabs({ data, getVal }: Props) {
             key={idx}
             className={`font-semibold w-1/4 py-1 mr-1 text-sm data-[state=active]:bg-[#323A46] data-[state=active]:text-white data-[state=inactive]:text-[#C3C9D2] data-[state=inactive]:bg-[#E7EAEE] rounded-[5px]`}
           >
-            <p>{ctx.title}</p>
+            <p className="truncate">{ctx.title}</p>
           </Trigger>
         ))}
       </List>

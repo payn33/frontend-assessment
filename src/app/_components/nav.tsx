@@ -27,13 +27,13 @@ export default function Nav() {
           <p className="text-[#747474]">{texts.role}</p>
         </div>
 
-        <div className="flex items-center w-[120px] justify-between">
+        <div className="flex items-center md:w-[120px] justify-between">
           <Image
             src={bell}
             alt="notification bell"
-            className="cursor-pointer"
+            className="cursor-pointer hidden md:inline"
           />
-          <Image src={moon} alt="theme switcher" className="cursor-pointer" />
+          <Image src={moon} alt="theme switcher" className="cursor-pointer hidden md:inline" />
           <DotsVerticalIcon className="cursor-pointer" />
         </div>
       </div>
