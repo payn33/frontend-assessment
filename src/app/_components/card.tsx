@@ -170,9 +170,9 @@ export default function DashboardCard({
                         />
 
                         <CheckIcon
-                          className="absolute translate-x-[75%] translate-y-[75%] mx-auto peer-checked:block hidden text-white"
-                          width={10}
-                          height={10}
+                          className="absolute translate-x-[30%] translate-y-[30%] mx-auto peer-checked:block hidden text-white"
+                          width={15}
+                          height={15}
                         />
                       </label>
                     )}
