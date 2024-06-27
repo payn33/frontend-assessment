@@ -11,7 +11,7 @@ const texts = {
 
 export default function Nav() {
   return (
-    <div className="flex justify-end w-full bg-white px-5 py-4 text-black shadow-sm">
+    <div className="flex justify-end w-full bg-white px-5 py-4 text-black shadow-sm fixed z-50">
       <div className="flex justify-between">
         <span className="flex items-baseline">
           <Image src={navProfileImage} alt="nav profile image />" />

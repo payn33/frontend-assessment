@@ -347,7 +347,7 @@ export default function Home() {
   };
 
   return (
-    <main className={`flex flex-col min-h-screen pt-12 pr-4 pl-5`}>
+    <main className={`flex flex-col min-h-screen pt-[120px] pr-4 pl-5`}>
       <div className="flex w-full h-[70px] items-center justify-between flex-col md:flex-row md:items-start mb-[70px] md:mb-0">
         <div className="text-black w-full mb-3 md:mb-0">
           <h1 className="font-bold text-lg">{texts.headers.text1}</h1>
