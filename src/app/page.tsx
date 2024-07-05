@@ -40,10 +40,37 @@ const pacifico = Pacifico({
   weight: ["400"],
 });
 
+function getGreeting() {
+  const now = new Date();
+  const hours = now.getHours();
+  let greeting;
+
+  if (hours < 12) {
+    greeting = "Good Morning";
+  } else if (hours < 18) {
+    greeting = "Good Afternoon";
+  } else {
+    greeting = "Good Evening";
+  }
+
+  return greeting;
+}
+
+function getFormattedDate() {
+  const now = new Date();
+  const options = {
+    weekday: "long",
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+  };
+  return now.toLocaleDateString("en-US", options as Intl.DateTimeFormatOptions);
+}
+
 const texts = {
   headers: {
-    text1: "Good evening",
-    text2: "Monday 20 Sep, 2023",
+    text1: getGreeting(),
+    text2: getFormattedDate(),
   },
 
   input: {
